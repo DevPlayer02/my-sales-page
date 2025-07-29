@@ -1,0 +1,23 @@
+.container {
+    background: #4b3cff;
+}
+
+.content {
+    display: flex;
+    padding-block: 0.4rem;
+    justify-content: center;
+
+    p {
+        color: #ffffff;
+        text-align: center;
+        font-family: Sora, sans-serif;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+
+    strong {
+        padding-left: 0.3rem;
+        font-weight: 700;   }
+}
