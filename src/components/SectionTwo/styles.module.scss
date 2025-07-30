@@ -1,0 +1,142 @@
+.container {
+    background: #040122;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4.3rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    h2 {
+        color: #ffffff;
+        text-align: center;
+        font-family: Syne;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.2rem;
+        max-width: 900px;
+        margin-inline: auto;
+    }
+
+    span {
+        position: relative;
+        display: inline;
+        background: linear-gradient(270deg,
+                #00c2ff,
+                #33ff8c,
+                #ffc640,
+                #e54cff,
+                #00c2ff,
+                #33ff8c);
+        background-size: 600% auto;
+        color: transparent;
+        background-clip: text;
+        animation: shift 3s linear infinite;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 5.3rem;
+    padding-block: 2.5rem;
+}
+
+.leftCard, 
+.rightCard {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2.4rem;
+    padding-inline: 2rem;
+    gap: 1.5rem;
+    border-radius: 0.7rem;
+    width: 22vw;
+}
+
+.leftCard {
+    background: linear-gradient(0deg, #000001, #202021);
+}
+
+.rightCard {
+    background: linear-gradient(0deg, #050324, #4939fb);
+}
+
+.titleCard {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+    h3 {
+        color: #ffffff;
+        text-align: center;
+        font-family: Syne;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+}
+
+.topics {
+    display: grid;    
+    gap: 2rem;
+    align-items: center;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+    button {
+        border-radius: 0.5rem;
+        background: #1a04ae;
+        box-shadow: 0rem 0.6rem 3.1rem 0rem #1a04ae8f;
+        padding-inline: 6.25rem;
+        padding-block: 1.25rem;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        color: #ffffff;
+        align-items: center;
+        font-family: Syne;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+}
+
+@keyframes shift {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
