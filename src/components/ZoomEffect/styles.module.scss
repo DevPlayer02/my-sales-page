@@ -45,7 +45,7 @@
 }
 
 .nextText {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 900;
 
@@ -59,8 +59,8 @@
     transform: translateY(100%);
     font-family: Syne;
     opacity: 0;
-    transition: transform 0.5s ease-out,
-    opacity 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    opacity: 0.5s ease-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -93,7 +93,8 @@
 }
 
 .textWrap {
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 8rem;
 }

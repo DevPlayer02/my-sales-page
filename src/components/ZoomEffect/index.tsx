@@ -1,6 +1,5 @@
 import styles from '@/components/ZoomEffect/styles.module.scss'
 import React, { useEffect } from 'react'
-import { text } from 'stream/consumers';
 
 export const ZoomEffect = () => {
     useEffect(() => {
@@ -41,7 +40,7 @@ export const ZoomEffect = () => {
 
             gsapModule.default.to('#zoom-text', {
                 scale,
-                duration: 1.5,
+                duration: 1,
                 xPercent,
                 yPercent,
                 transformOrigin: 'center center',
@@ -61,15 +60,15 @@ export const ZoomEffect = () => {
                 opacity: 1,
                 scrollTrigger: {
                     trigger: '#zoom-in',
-                    start: 'top 20%',
-                    end: 'top -20%',
+                    start: 'top 25%',
+                    end: 'top 0%',
                     scrub: true,
                 },
                 ease: 'power3.out',
             })
             
-            gsapModule.default.fromTo('.zoomText span', {
-                opacity: 0.3, y: 20
+            gsapModule.default.fromTo('#next-text span', {
+                opacity: 0.3, y: 200
             },
             {
                 opacity: 1,
@@ -78,7 +77,7 @@ export const ZoomEffect = () => {
                 scrollTrigger: {
                     trigger: '#zoom-in',
                     start: 'top 0%',
-                    end: 'bottom -10%',
+                    end: 'bottom 25%',
                     scrub: true,
                 },
                 ease: 'power3.out',
